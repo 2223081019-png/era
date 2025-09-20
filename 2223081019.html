@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All HTML Tags Demo</title>
+  <style>
+    body {font-family: Arial, sans-serif; padding: 20px; line-height: 1.6;}
+    section {border:1px solid #ccc; padding:15px; margin:15px 0; border-radius:8px}
+    table, th, td {border:1px solid black; border-collapse: collapse; padding:6px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>All HTML Tags in One Page</h1>
+    <p>This page demonstrates most common HTML tags.</p>
+  </header>
+
+  <nav>
+    <a href="#text">Text</a> |
+    <a href="#lists">Lists</a> |
+    <a href="#table">Table</a> |
+    <a href="#form">Form</a> |
+    <a href="#media">Media</a> |
+    <a href="#semantic">Semantic</a>
+  </nav>
+
+  <main>
+    <section id="text">
+      <h2>Text & Formatting</h2>
+      <p>This is <b>bold</b>, <i>italic</i>, <u>underline</u>, <mark>marked</mark>, <small>small</small>, <strong>strong</strong>, <em>emphasized</em>.</p>
+      <p>Superscript: x<sup>2</sup>, Subscript: H<sub>2</sub>O</p>
+      <p>Deleted: <del>Old</del>, Inserted: <ins>New</ins></p>
+      <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+      <blockquote>This is a blockquote.</blockquote>
+      <code>console.log("Hello");</code>
+      <pre>
+function greet(){
+  return "Hello World";
+}
+      </pre>
+      <p>Keyboard: Press <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+      <p>Variable: <var>x</var> = 10, Sample output: <samp>10</samp></p>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Unordered</h3>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+
+      <h3>Ordered</h3>
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+      </ol>
+
+      <h3>Description</h3>
+      <dl>
+        <dt>HTML</dt><dd>Markup Language</dd>
+        <dt>CSS</dt><dd>Stylesheet Language</dd>
+      </dl>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table>
+        <caption>Student Marks</caption>
+        <tr><th>Name</th><th>Subject</th><th>Marks</th></tr>
+        <tr><td>Jhon</td><td>Math</td><td>80</td></tr>
+        <tr><td>Era</td><td>English</td><td>85</td></tr>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Form Elements</h2>
+      <form>
+        <label>Name: <input type="text" name="name"></label><br><br>
+        <label>Email: <input type="email" name="email"></label><br><br>
+        <label>Password: <input type="password" name="pass"></label><br><br>
+        <label>Date: <input type="date" name="date"></label><br><br>
+        <label>Color: <input type="color" name="color"></label><br><br>
+        <label>Number: <input type="number" name="num"></label><br><br>
+        <label>Range: <input type="range" min="0" max="100"></label><br><br>
+        <label>Gender:
+          <input type="radio" name="gender"> Male
+          <input type="radio" name="gender"> Female
+        </label><br><br>
+        <label>Hobbies:
+          <input type="checkbox" name="hobby"> Reading
+          <input type="checkbox" name="hobby"> Sports
+        </label><br><br>
+        <label>Country:
+          <select>
+            <option>Bangladesh</option>
+            <option>India</option>
+          </select>
+        </label><br><br>
+        <textarea rows="3" cols="30">Write here...</textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+      <img src="https://via.placeholder.com/150" alt="Image"><br>
+      <audio controls>
+        <source src="" type="audio/mpeg">
+      </audio><br>
+      <video controls width="250">
+        <source src="" type="video/mp4">
+      </video>
+      <figure>
+        <img src="https://via.placeholder.com/100" alt="figure">
+        <figcaption>Figure caption</figcaption>
+      </figure>
+    </section>
+
+    <section id="semantic">
+      <h2>Semantic & Interactive</h2>
+      <article>
+        <h3>Article Example</h3>
+        <p>This is an article block.</p>
+      </article>
+      <aside>
+        <p>This is an aside note.</p>
+      </aside>
+      <details>
+        <summary>Click to expand</summary>
+        <p>Hidden details shown here.</p>
+      </details>
+      <progress value="70" max="100">70%</progress>
+      <meter value="0.6">60%</meter>
+      <time datetime="2025-09-20">September 20, 2025</time>
+      <canvas id="c" width="200" height="80" style="border:1px solid #000"></canvas>
+      <script>
+        let ctx = document.getElementById('c').getContext('2d');
+        ctx.fillStyle = 'lightblue';
+        ctx.fillRect(10,10,180,60);
+        ctx.fillStyle = 'black';
+        ctx.fillText('Canvas Example', 40, 40);
+      </script>
+      <iframe srcdoc="<p>Iframe example content</p>" width="300" height="100"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML Demo Page</p>
+  </footer>
+</body>
+</html>
